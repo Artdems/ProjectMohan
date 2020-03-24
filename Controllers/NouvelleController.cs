@@ -4,15 +4,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ProjectMohan.BD;
+using ProjectMohan.ViewModel.Nouvelles;
 
 namespace ProjectMohan.Controllers
 {
     public class NouvelleController : Controller
     {
         // GET: Nouvelle
+
+        DAL dal = new DAL();
         public ActionResult Index()
         {
-            return View();
+            IndexViewModel viewModel = new IndexViewModel();
+
+            viewModel.nouvelle = dal.GetNouvelles();
+            return View(viewModel);
         }
 
         // GET: Nouvelle/Details/5
