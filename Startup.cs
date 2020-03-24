@@ -16,6 +16,10 @@ namespace ProjectMohan
     {
         public Startup(IConfiguration configuration)
         {
+            using (var client = new DatabaseContexte())
+            {
+                client.Database.EnsureCreated();
+            }
             Configuration = configuration;
         }
 

@@ -14,19 +14,16 @@
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.ID)
+                    ID
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Titre)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Text)
+                    Titre
                 </th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model)
+            @foreach (var item in Model.nouvelle)
             {
                 <tr>
                     <td>
@@ -34,9 +31,6 @@
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Titre)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Text)
                     </td>
                     <td>
                         @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |

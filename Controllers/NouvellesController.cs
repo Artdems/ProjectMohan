@@ -9,7 +9,7 @@ using ProjectMohan.ViewModel.Nouvelles;
 
 namespace ProjectMohan.Controllers
 {
-    public class NouvelleController : Controller
+    public class NouvellesController : Controller
     {
         // GET: Nouvelle
 
