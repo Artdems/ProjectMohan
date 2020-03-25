@@ -12,5 +12,7 @@ namespace ProjectMohan.ViewModel.Nouvelles
 
         public string Text { get; set; }
 
+        public string Action { get; set; }
+
     }
 }

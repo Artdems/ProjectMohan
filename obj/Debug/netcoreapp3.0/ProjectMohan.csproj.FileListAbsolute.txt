@@ -191,3 +191,4 @@ C:\Users\Arthur DESMARAIS\source\repos\ProjectMohan\bin\Debug\netcoreapp3.0\zh-H
 C:\Users\Arthur DESMARAIS\source\repos\ProjectMohan\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Arthur DESMARAIS\source\repos\ProjectMohan\obj\Debug\netcoreapp3.0\ProjectMohan.csproj.CoreCompileInputs.cache
 C:\Users\Arthur DESMARAIS\source\repos\ProjectMohan\obj\Debug\netcoreapp3.0\ProjectMohan.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Arthur DESMARAIS\source\repos\ProjectMohan\obj\Debug\netcoreapp3.0\Razor\Views\Nouvelles\CreateEditeNouvelle.cshtml.g.cs

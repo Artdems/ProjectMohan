@@ -31,7 +31,9 @@ namespace ProjectMohan.Controllers
         // GET: Nouvelle/Create
         public ActionResult Create()
         {
-            return View();
+            CreateEditeNouvelleViewModel viewmodel = new CreateEditeNouvelleViewModel();
+            viewmodel.Action = "Create";
+            return View("CreateEditeNouvelle",viewmodel);
         }
 
         // POST: Nouvelle/Create
@@ -39,8 +41,10 @@ namespace ProjectMohan.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
         {
+
             try
             {
+                dal.AjouterNouvelle(Request.Form["Titre"], Request.Form["Texte"]);
                 // TODO: Add insert logic here
 
                 return RedirectToAction(nameof(Index));

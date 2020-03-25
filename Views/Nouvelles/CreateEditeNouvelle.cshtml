@@ -6,11 +6,11 @@
 
 <h1>View</h1>
 
-<h4>CreateEditeNouvelleViewModel</h4>
+<h4>Crée une nouvelles</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="View">
+    <div class="col-md-12">
+        <form asp-action="@Model.Action">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Titre" class="control-label"></label>
@@ -19,7 +19,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Text" class="control-label"></label>
-                <input asp-for="Text" class="form-control" />
+                <textarea asp-for="Text"  TextMode="multiline" rows="50" class="form-control"></textarea>
                 <span asp-validation-for="Text" class="text-danger"></span>
             </div>
             <div class="form-group">
