@@ -73,6 +73,10 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "Serenity.Web": {
+              "target": "Package",
+              "version": "[3.12.4, )"
+            },
             "bootstrap": {
               "target": "Package",
               "version": "[4.4.1, )"
