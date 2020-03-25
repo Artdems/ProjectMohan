@@ -21,7 +21,7 @@ namespace ProjectMohan.BD
             return db.Nouvelles.Where(b => b.ID.Equals(ID)).First();
         }
 
-        void AjouterNouvelle(string Titre, string Text)
+        public void AjouterNouvelle(string Titre, string Text)
         {
             Nouvelle nouvelle = new Nouvelle();
             nouvelle.Titre = Titre;
@@ -31,7 +31,7 @@ namespace ProjectMohan.BD
             db.SaveChanges();
         }
 
-        void SupprimerNouvelle(int ID)
+        public void SupprimerNouvelle(int ID)
         {
             Nouvelle nouvelle = db.Nouvelles.Where(b => b.ID.Equals(ID)).First();
 
